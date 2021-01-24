@@ -1,0 +1,65 @@
+.animation{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.sky img{
+    width: 100%;
+    height: auto;
+
+}
+.city img{
+    height: 50%;
+    position: absolute;
+    bottom: 30%;
+    animation: city 3s linear infinite;
+}
+@keyframes city{
+    0%{
+        transform: translateX(-5%);
+    }
+    100%{
+        transform: translateX(-25%);
+    }
+}
+@keyframes aylana{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.road img{
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    animation: city 3s linear infinite;
+}
+.car img{
+    position: absolute;
+    height: 25%;
+    top: 70%;
+    right: 30%;
+
+}
+.wheel-1 img,.wheel-2 img{
+    position: absolute;
+    animation: aylana 2s linear infinite;
+}
+.wheel-1 img{
+    height: 10%;
+    bottom: 6%;
+    left: 39.4%;
+}
+.wheel-2 img{
+    height: 10%;
+    bottom: 6%;
+    right: 34.4%;
+}
+
